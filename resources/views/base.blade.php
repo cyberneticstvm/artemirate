@@ -7,17 +7,17 @@
         <meta name="description" content="description" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!-- Favicon -->
-        <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" />
+        <link rel="shortcut icon" href="{{ public_path().'/images/favicon.png' }}" />
         <!-- Plugins CSS -->
-        <link rel="stylesheet" href="{{ asset('css/plugins.css') }}" />
+        <link rel="stylesheet" href="{{ public_path().'css/plugins.css' }}" />
         <!-- Main Style CSS -->
-        <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
-        <link rel="stylesheet" href="{{ asset('css/responsive.css') }}" />
+        <link rel="stylesheet" href="{{ public_path().'css/style.css' }}" />
+        <link rel="stylesheet" href="{{ public_path().'css/responsive.css' }}" />
     </head>
 
     <body class="template-index diva home7-creative">
         <!-- Page Loader -->
-        <div id="pre-loader"><img src="/images/loader.gif" alt="Loading..." /></div>
+        <div id="pre-loader"><img src="{{ public_path().'images/loader.gif' }}" alt="Loading..." /></div>
         <!-- End Page Loader -->
 
         <!-- Page Wrapper -->
@@ -1124,9 +1124,9 @@
 
             <!-- Including Javascript -->
             <!-- Plugins JS -->
-            <script src="{{ asset('js/plugins.js') }}"></script>
+            <script src="{{ public_path().'js/plugins.js' }}"></script>
             <!-- Main JS -->
-            <script src="{{ asset('js/main.js') }}"></script>
+            <script src="{{ public_path().'js/main.js' }}"></script>
 
         </div>
         <!-- End Page Wrapper -->
