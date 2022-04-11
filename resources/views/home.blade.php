@@ -8,12 +8,12 @@
         <div class="home-slideshow slideshow--large">
             <div class="slide slide1 d-block">
                 <div class="slideimg blur-up lazyload">
-                    <a href="collection-3columns.html"><img class="blur-up lazyload" data-src="/images/slideshow-banners/home7-banner1_1900x750.jpg" src="/images/slideshow-banners/home7-banner1_1900x750.jpg" alt="banner" title="" /></a>
+                    <a href="collection-3columns.html"><img class="blur-up lazyload" data-src="{{ asset('images/slideshow-banners/home7-banner1_1900x750.jpg') }}" src="{{ asset('images/slideshow-banners/home7-banner1_1900x750.jpg') }}" alt="banner" title="" /></a>
                 </div>
             </div>
             <div class="slide slide2 d-block">
                 <div class="slideimg blur-up lazyload">
-                    <a href="collection-4columns.html"><img class="blur-up lazyload" data-src="/images/slideshow-banners/home7-banner1_1900x750.jpg" src="/images/slideshow-banners/home7-banner1_1900x750.jpg" alt="banner" title="" /></a>
+                    <a href="collection-4columns.html"><img class="blur-up lazyload" data-src="{{ asset('images/slideshow-banners/home7-banner1_1900x750.jpg') }}" src="{{ asset('images/slideshow-banners/home7-banner1_1900x750.jpg') }}" alt="banner" title="" /></a>
                 </div>
             </div>
         </div>
