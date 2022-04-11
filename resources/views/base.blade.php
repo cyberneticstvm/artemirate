@@ -7,12 +7,12 @@
         <meta name="description" content="description" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!-- Favicon -->
-        <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" />
+        <link rel="shortcut icon" href="/images/favicon.png" />
         <!-- Plugins CSS -->
-        <link rel="stylesheet" href="{{ asset('css/plugins.css') }}" />
+        <link rel="stylesheet" href="/css/plugins.css" />
         <!-- Main Style CSS -->
-        <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
-        <link rel="stylesheet" href="{{ asset('css/responsive.css') }}" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/responsive.css" />
     </head>
 
     <body class="template-index diva home7-creative">
@@ -1124,9 +1124,9 @@
 
             <!-- Including Javascript -->
             <!-- Plugins JS -->
-            <script src="{{ asset('js/plugins.js') }}"></script>
+            <script src="/js/plugins.js"></script>
             <!-- Main JS -->
-            <script src="{{ asset('js/main.js') }}"></script>
+            <script src="/js/main.js"></script>
 
         </div>
         <!-- End Page Wrapper -->
