@@ -8,12 +8,17 @@
         <div class="home-slideshow slideshow--large">
             <div class="slide slide1 d-block">
                 <div class="slideimg blur-up lazyload">
-                    <a href="collection-3columns.html"><img class="blur-up lazyload" data-src="{{ public_path().'/images/slideshow-banners/home7-banner1_1900x750.jpg' }}" src="{{  public_path().'/images/slideshow-banners/home7-banner1_1900x750.jpg' }}" alt="banner" title="" /></a>
+                    <a href="/"><img class="blur-up lazyload" data-src="{{ public_path().'/storage/gallery/artemirate-banner1.webp' }}" src="{{ public_path().'/storage/gallery/artemirate-banner1.webp' }}" alt="banner" title="" /></a>
                 </div>
             </div>
             <div class="slide slide2 d-block">
                 <div class="slideimg blur-up lazyload">
-                    <a href="collection-4columns.html"><img class="blur-up lazyload" data-src="{{ public_path().'/images/slideshow-banners/home7-banner1_1900x750.jpg' }}" src="{{  public_path().'/images/slideshow-banners/home7-banner1_1900x750.jpg' }}" alt="banner" title="" /></a>
+                    <a href="collection-4columns.html"><img class="blur-up lazyload" data-src="{{ public_path().'/storage/gallery/artemirate-banner2.webp' }}" src="{{ public_path().'/storage/gallery/artemirate-banner2.webp' }}" alt="banner" title="" /></a>
+                </div>
+            </div>
+            <div class="slide slide2 d-block">
+                <div class="slideimg blur-up lazyload">
+                    <a href="collection-4columns.html"><img class="blur-up lazyload" data-src="{{ public_path().'/storage/gallery/artemirate-banner3.webp' }}" src="{{ public_path().'/storage/gallery/artemirate-banner3.webp' }}" alt="banner" title="" /></a>
                 </div>
             </div>
         </div>
