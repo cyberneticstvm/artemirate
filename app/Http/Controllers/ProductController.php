@@ -53,8 +53,8 @@ class ProductController extends Controller
         $input['main_image'] = $mainPath;
         //$input['hover_image'] = $hoverPath;
         $product = Product::create($input);
-        return redirect()->route('product.index')
-                        ->with('success','Product created successfully');
+        //return redirect()->route('product.index')->with('success','Product created successfully');
+        return redirect('/admin/product/create');
     }
 
     /**
