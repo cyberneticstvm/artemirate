@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="{{ public_path().'/css/responsive.css' }}" />
     </head>
 
-    <body class="template-index diva home7-creative">
+    <body class="template-index diva home13-dark">
         <!-- Page Loader -->
         <div id="pre-loader"><img src="{{ public_path().'/images/loader.gif' }}" alt="Artemirate..." /></div>
         <!-- End Page Loader -->
