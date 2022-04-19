@@ -113,8 +113,8 @@
                                         <ul class="row mmWrapper">
                                             @foreach($collections as $collection)
                                             <li class="lvl-1 col-md-3 col-lg-3">
-                                                <a href="/" class="site-nav lvl-1 menu-title">{{ $collection->name }}</a>
-                                                <a href="shop-left-sidebar.html" class="catalogueImg mb-2"><img src="{{ public_path().'/storage/'.$collection->main_image }}" alt="{{ $collection->name }}" /></a>
+                                                <a href="/collection/{{ $collection->slug }}" class="site-nav lvl-1 menu-title">{{ $collection->name }}</a>
+                                                <a href="/collection/{{ $collection->slug }}" class="catalogueImg mb-2"><img src="{{ public_path().'/storage/'.$collection->main_image }}" alt="{{ $collection->name }}" /></a>
                                             </li>
                                             @endforeach
                                         </ul>

@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
-use App\Models\Collection;
+use App\Models\Product;
 use DB;
 
-class CollectionController extends Controller
+class ProductController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -26,7 +26,8 @@ class CollectionController extends Controller
      */
     public function create()
     {
-        return view('admin.collection.create');
+        $collections = DB::table('collections')->get();
+        return view('admin.product.create', compact('collections'));
     }
 
     /**
@@ -38,22 +39,22 @@ class CollectionController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => 'required|unique:collections',
+            'collection_id' => 'required',
+            'name' => 'required|unique:products',
+            'description' => 'required',
             'main_image' => 'required|mimes:png,jpeg,jpg,webp',
-            'hover_image' => 'required|mimes:png,jpeg,jpg,webp',
         ]);
-
         $main_image = time().'_'.$request->main_image->getClientOriginalName();
-        $hover_image = time().'_'.$request->hover_image->getClientOriginalName();
-        $mainPath = $request->file('main_image')->storeAs('collection', $main_image, 'public');
-        $hoverPath = $request->file('hover_image')->storeAs('collection', $hover_image, 'public');
+        //$hover_image = time().'_'.$request->hover_image->getClientOriginalName();
+        $mainPath = $request->file('main_image')->storeAs('product', $main_image, 'public');
+        //$hoverPath = $request->file('hover_image')->storeAs('product', $hover_image, 'public');
         $input = $request->all();
         $input['slug'] = Str::slug($request->name);
         $input['main_image'] = $mainPath;
-        $input['hover_image'] = $hoverPath;
-        $collection = Collection::create($input);
-        return redirect()->route('collection.index')
-                        ->with('success','Collection created successfully');
+        //$input['hover_image'] = $hoverPath;
+        $product = Product::create($input);
+        return redirect()->route('product.index')
+                        ->with('success','Product created successfully');
     }
 
     /**

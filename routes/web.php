@@ -13,11 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'App\Http\Controllers\CollectionController@homeload');
+Route::get('/', 'App\Http\Controllers\WebController@collections');
 
 Route::get('/collection/', function () {
     return view('collection');
 });
+Route::get('/collection/{slug}', 'App\Http\Controllers\WebController@products');
 
 
 // admin //
@@ -34,3 +35,9 @@ Route::get('/admin/collection/edit/{id}/', 'App\Http\Controllers\CollectionContr
 Route::put('/admin/collection/edit/{id}/', 'App\Http\Controllers\CollectionController@update')->name('collection.update');
 Route::delete('/admin/collection/delete/{id}/', 'App\Http\Controllers\CollectionController@destroy')->name('collection.delete');
 // end collection //
+
+// product //
+Route::get('/admin/product/', 'App\Http\Controllers\CollectionController@index')->name('product.index');
+Route::get('/admin/product/create/', 'App\Http\Controllers\ProductController@create')->name('product.create');
+Route::post('/admin/product/create/', 'App\Http\Controllers\ProductController@store')->name('product.save');
+// end product //

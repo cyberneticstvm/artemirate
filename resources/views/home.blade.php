@@ -42,12 +42,12 @@
                                     <div class="col-12 item">
                                         <div class="product-image">
                                             <!-- product Image -->
-                                            <a href="/">
+                                            <a href="/collection/{{ $collection->slug }}">
                                                 <!-- Image -->
                                                 <img class="primary blur-up lazyload" data-src="{{ public_path().'/storage/'.$collection->main_image }}" src="" alt="{{ $collection->name }}" title="{{ $collection->name }}" />
                                                 <!-- End Image -->
                                                 <!-- Hover Image -->
-                                                <img class="hover blur-up lazyload" data-src="{{ public_path().'/storage/'.$collection->hover_image }}" alt="image" title="product" />
+                                                <img class="hover blur-up lazyload" data-src="{{ public_path().'/storage/'.$collection->hover_image }}" alt="image" title="{{ $collection->name }}" />
                                                 <!-- End Hover Image -->
                                                 <!-- Product Label -->
                                                 <div class="product-labels rectangular"><!--<span class="lbl on-sale">-16%</span>--> <span class="lbl pr-label1">new</span></div>
