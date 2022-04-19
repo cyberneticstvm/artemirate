@@ -54,6 +54,7 @@
                             </div>
                             @endforeach
                         </div>
+                        <div class="text-center mt-3">{{ $products->links() }}</div>
                     </div>
                 </div>
             </div>
