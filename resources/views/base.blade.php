@@ -64,7 +64,7 @@
 
                                 <!-- Desktop Logo -->
                                 <div class="logo col-4 col-sm-4 col-md-2 col-lg-2 text-center">
-                                    <a href="/"><img src="{{ public_path().'/images/logo/logo-white.png' }}" alt="Artemirate" title="Artemirate" /></a>
+                                    <a href="/"><img src="{{ public_path().'/images/logo/artemirate-logo.png' }}" alt="Artemirate" title="Artemirate" /></a>
                                 </div>
                                 <!-- End Desktop Logo -->
 
@@ -204,19 +204,19 @@
                             <div class="row">
                                 <!-- Custom block -->
                                 <div class="col-12 col-sm-12 col-md-3 col-lg-3 custom-block">
-                                    <div class="footer-logo"><img src="{{ public_path().'/images/logo/logo-white.png' }}" alt="Artemirate" title="Artemirate" width="130" /></div>
-                                    <div class="text mb-2 mb-md-0 mt-3">Style, elegance and sophistication. Everything in your wardrobe. Choose styles from some of the best italian designers who have...</div>
+                                    <div class="footer-logo"><img src="{{ public_path().'/images/logo/artemirate-logo.png' }}" alt="Artemirate" title="Artemirate" width="130" /></div>
+                                    <div class="text mb-2 mb-md-0 mt-3">Style, elegance and sophistication. Everything on your table. Artemirate is connected with premium international tableware brands. We cater to hotels, restaurants, cafes, or catering companies and offer you personalized services.</div>
                                 </div>
                                 <!-- End Custom block -->
                                 <!-- Footer Links -->
                                 <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-links">
                                     <h4 class="h4">Quick Links</h4>
                                     <ul>
-                                        <li><a href="#">Clearance Sale</a></li>
-                                        <li><a href="#">Men Clothing 20% Off</a></li>
-                                        <li><a href="#">Women Clothing 50% Off</a></li>
-                                        <li><a href="#">70% off on Kids</a></li>
-                                        <li><a href="#">Big Sale</a></li>
+                                        <li><a href="#">Bowls</a></li>
+                                        <li><a href="#">Plates</a></li>
+                                        <li><a href="#">Coffee & Tea</a></li>
+                                        <li><a href="#">Cups & Mugs</a></li>
+                                        <li><a href="#">Service Accessories</a></li>
                                     </ul>
                                 </div>
                                 <!-- End Footer Links -->
@@ -226,15 +226,15 @@
                                     <ul class="addressFooter">
                                         <li>
                                             <i class="icon an an-map-marker"></i>
-                                            <p>55 Gallaxy Enque,<br>2568 steet, 23568 NY</p>
+                                            <p>ARTEMIRATE LLC, Al Fahidi,<br>Office No. 43-44, Bur Dubai, Dubai,<br>UAE</p>
                                         </li>
                                         <li class="phone">
                                             <i class="icon an an-phone-volume"></i>
-                                            <p><a href="tel:(440)0000000000">(440) 000 000 0000</a></p>
+                                            <p><a href="tel:+971569665128">(+971) 569665128</a></p>
                                         </li>
                                         <li class="email">
                                             <i class="icon an an-envelope"></i>
-                                            <p><a href="mailto:sales@yousite.com">sales@yousite.com</a></p>
+                                            <p><a href="mailto:sales@yousite.com">artemirateindia@gmail.com</a></p>
                                         </li>
                                     </ul>
                                 </div>
