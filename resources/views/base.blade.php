@@ -204,7 +204,7 @@
                             <div class="row">
                                 <!-- Custom block -->
                                 <div class="col-12 col-sm-12 col-md-3 col-lg-3 custom-block">
-                                    <div class="footer-logo"><img src="{{ public_path().'/images/logo/artemirate-logo.png' }}" alt="Artemirate" title="Artemirate" /></div>
+                                    <div class="footer-logo"><img src="{{ public_path().'/images/logo/artemirate-logo.png' }}" alt="Artemirate" title="Artemirate" width="50%" /></div>
                                     <div class="text mb-2 mb-md-0 mt-3">Style, elegance and sophistication. Everything on your table. Artemirate is connected with premium international tableware brands. We cater to hotels, restaurants, cafes, or catering companies and offer you personalized services.</div>
                                 </div>
                                 <!-- End Custom block -->
