@@ -30,6 +30,7 @@ class WebController extends Controller
     public function product_detail($slug){
         $collections = $this->collections;
         $product = Product::where('slug', $slug)->first();
-        return view('product_detail', compact('product', 'collections'));
+        $collection = Collection::where('id', $product->collection_id)->first();
+        return view('product_detail', compact('product', 'collection', 'collections'));
     }
 }
