@@ -18,7 +18,7 @@
                                 <!-- Product Image -->
                                 <div class="product-image">
                                     <!-- Product Image -->
-                                    <a href="/">
+                                    <a href="/product/{{ $product->slug }}">
                                         <!-- Image -->
                                         <img class="primary blur-up lazyloaded" data-src="{{ public_path().'/storage/'.$product->main_image }}" src="{{ public_path().'/storage/'.$product->main_image }}" alt="{{ $product->name }}" title="{{ $product->name }}">
                                         <!-- End Image -->

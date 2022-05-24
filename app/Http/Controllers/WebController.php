@@ -26,4 +26,10 @@ class WebController extends Controller
         $products = Product::where('collection_id', $collection->id)->paginate(12);
         return view('products', compact('products', 'collection', 'collections'));
     }
+
+    public function product_detail($slug){
+        $collections = $this->collections;
+        $product = Product::where('slug', $slug)->first();
+        return view('product_detail', compact('product', 'collections'));
+    }
 }

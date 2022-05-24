@@ -19,6 +19,7 @@ Route::get('/collection/', function () {
     return view('collection');
 });
 Route::get('/collection/{slug}', 'App\Http\Controllers\WebController@products');
+Route::get('/product/{slug}', 'App\Http\Controllers\WebController@product_detail');
 
 
 // admin //
