@@ -35,7 +35,7 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <!-- Product Info -->
-                        <div class="product-single__meta">
+                        <div class="product-single__meta mt-5">
                             <h1 class="product-single__title">{{ $product->product_name }}</h1>
                             <h5>{{ $product->name }}</h5>
                             <!-- Product Description -->
@@ -69,14 +69,6 @@
                                 <!-- End Product Action -->
                             </form>
                             <!-- End Form -->
-                            <!-- Product Intro -->
-                            <div class="product-info">
-                                <p class="product-stock">Availability: <span class="instock">In Stock</span><span class="outstock hide">Unavailable</span></p> 
-                                <p class="product-type">Product Type: <span>unique</span></p>  
-                                <p class="product-type">Vendor: <span>Sibel Saral</span></p>  
-                                <p class="product-sku">SKU: <span class="variant-sku">3435DT-1</span></p>
-                            </div>
-                            <!-- End Product Intro -->
                         </div>
                         <!-- End Product Info -->
                     </div>
