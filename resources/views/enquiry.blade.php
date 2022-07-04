@@ -14,7 +14,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 box">	
-                <div class="mb-4">
+                <div class="mb-4 mt-4">
                     <h3>Personal Information</h3>
                     <form method="post" action="#" accept-charset="UTF-8" class="customer-form">
                         <div class="row">
@@ -42,6 +42,14 @@
                                 <div class="form-group">
                                     <label for="CustomerEmail">Email Address <span class="required">*</span></label>
                                     <input id="CustomerEmail" type="email" name="customer[email]" placeholder="" />                        	
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-group">
+                                    <label for="CustomerMessage">Message <span class="required">*</span></label>
+                                    <textarea name="CustomerMessage" rows="5"></textarea>                     	
                                 </div>
                             </div>
                         </div>
