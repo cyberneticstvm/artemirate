@@ -42,3 +42,8 @@ Route::get('/admin/product/', 'App\Http\Controllers\CollectionController@index')
 Route::get('/admin/product/create/', 'App\Http\Controllers\ProductController@create')->name('product.create');
 Route::post('/admin/product/create/', 'App\Http\Controllers\ProductController@store')->name('product.save');
 // end product //
+
+// send enquiry //
+Route::post('/send-enquiry/', 'App\Http\Controllers\ProductController@enquiry')->name('product.enquiry');
+Route::get('/enquiry/', 'App\Http\Controllers\ProductController@enquiryform')->name('enquiry');
+// end send enquiry //

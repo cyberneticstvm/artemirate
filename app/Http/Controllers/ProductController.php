@@ -101,4 +101,18 @@ class ProductController extends Controller
     {
         //
     }
+
+    public function enquiry(Request $request){
+        $collections = [];
+        $sku = $request->sku;
+        $qty = $request->qty;
+        return redirect()->route('enquiry', compact('qty', 'sku', 'collections'));
+    }
+
+    public function enquiryform(Request $request){
+        $collections = [];
+        $sku = $request->sku;
+        $qty = $request->qty;
+        return view('enquiry', compact('sku', 'qty', 'collections'));
+    }
 }

@@ -50,20 +50,22 @@
                             </div>
                             <!-- End Product Description -->
                             <!-- Form -->
-                            <form method="post" action="/cart/add" id="product_form_10508262282" accept-charset="UTF-8" class="product-form product-form-product-template product-form-border hidedropdown" enctype="multipart/form-data">
+                            <form method="post" action="{{ route('product.enquiry') }}" id="product_form_10508262282" accept-charset="UTF-8" class="product-form product-form-product-template product-form-border hidedropdown">
+                                @csrf
+                                <input type="hidden" name="sku" value="{{ $product->name }}" />
                                 <!-- Product Action -->
                                 <div class="product-action clearfix">
                                     <div class="product-form__item--quantity">
                                         <div class="wrapQtyBtn">
                                             <div class="qtyField">
                                                 <a class="qtyBtn minus" href="javascript:void(0);"><i class="icon an an-minus" aria-hidden="true"></i></a>
-                                                <input type="text" name="quantity" value="1" class="product-form__input qty" />
+                                                <input type="text" name="qty" value="1" class="product-form__input qty" />
                                                 <a class="qtyBtn plus" href="javascript:void(0);"><i class="icon an an-plus" aria-hidden="true"></i></a>
                                             </div>
                                         </div>
                                     </div>                                
                                     <div class="payment-button" data-shopify="payment-button">
-                                        <button type="button" class="payment-button__button payment-button__button--unbranded">SEND ENQUIRY</button>
+                                        <button type="submit" class="payment-button__button payment-button__button--unbranded">SEND ENQUIRY</button>
                                     </div>
                                 </div>
                                 <!-- End Product Action -->
