@@ -293,6 +293,7 @@
             <script src="{{ public_path().'/js/plugins.js' }}"></script>
             <!-- Main JS -->
             <script src="{{ public_path().'/js/main.js' }}"></script>
+            <script src="{{ public_path().'/js/script.js' }}"></script>
 
         </div>
         <!-- End Page Wrapper -->

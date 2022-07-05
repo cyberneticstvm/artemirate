@@ -65,7 +65,7 @@
                                         </div>
                                     </div>                                
                                     <div class="payment-button" data-shopify="payment-button">
-                                        <button type="submit" class="payment-button__button payment-button__button--unbranded">SEND ENQUIRY</button>
+                                        <button type="submit" class="btn-form-submit payment-button__button payment-button__button--unbranded">SEND ENQUIRY</button>
                                     </div>
                                 </div>
                                 <!-- End Product Action -->

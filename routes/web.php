@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EmailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,3 +48,7 @@ Route::post('/admin/product/create/', 'App\Http\Controllers\ProductController@st
 Route::post('/send-enquiry/', 'App\Http\Controllers\ProductController@enquiry')->name('product.enquiry');
 Route::get('/enquiry/', 'App\Http\Controllers\ProductController@enquiryform')->name('enquiry');
 // end send enquiry //
+
+// mail //
+Route::post('/send-enquiry-email/', [EmailController::class, 'index'])->name('send-enquiry-email');
+// end mail //
